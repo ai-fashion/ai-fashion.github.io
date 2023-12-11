@@ -70,7 +70,7 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hd-  fusion.github.io">
+          <a class="navbar-item" href="https://hd-fusion.github.io">
             HDFusion
           </a>
           <!-- <a class="navbar-item" href="https://nerfies.github.io">
@@ -98,11 +98,11 @@
           <h1 class="title is-1 publication-title">GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=-VJZrUkAAAAJ&hl=en">Yahao Shi</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=-VJZrUkAAAAJ&hl=en">Yahao Shi</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://yanmin-wu.github.io/">Yanmin Wu</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=11sQNWwAAAAJ&hl=en&oi=ao">Yanmin Wu</a><sup>2*</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=eOkkQWUAAAAJ&hl=en&oi=ao">Chenming Wu</a><sup>3</sup>,
+              <a href="https://scholar.google.com/citations?user=eOkkQWUAAAAJ&hl=en&oi=ao">Chenming Wu</a><sup>3#</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=bdVU63IAAAAJ&hl=en">Xing Liu</a><sup>3</sup>,
@@ -121,10 +121,10 @@
               <a href="https://www.cs.unc.edu/~zlj/">Liangjun Zhang</a><sup>3</sup>
             </span>
             <span class="author-block">
-              <a href="https://jianzhang.tech/">Jian Zhang</a><sup>2</sup>
+              <a href="https://jianzhang.tech/">Jian Zhang</a><sup>2†</sup>
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=tG4RnyYAAAAJ&hl=en">Bin Zhou</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=tG4RnyYAAAAJ&hl=en">Bin Zhou</a><sup>1†</sup>
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=1wzEtxcAAAAJ&hl=zh-CN">Errui Ding</a><sup>3</sup>
@@ -140,11 +140,17 @@
             <span class="author-block"><sup>3</sup>Baidu VIS</span>
           </div>
 
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution,</span>
+            <span class="author-block"><sup>#</sup>Project lead,</span>
+            <span class="author-block"><sup>†</sup>Corresponding authors</span>
+          </div>
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/abs/2312.05133"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -153,7 +159,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2312.05133"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -174,7 +180,7 @@
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://3dgir.github.io/"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -317,9 +323,10 @@
           <p>
             In this paper, we answer this question by introducing GIR, a novel inverse rendering framework based on 3DGS that estimates material properties, geometry, and illumination from multi-view images in high fidelity. We address the challenge of accurately modeling surface normals in 3D Gaussian representations. The complexity arises from the discrete and often in-homogeneous distribution of these Gaussians. This makes the learning of accurate normals nontrivial without the use of regularization. Moreover, the normal regularization methods designed for learning implicit Signed Distance Functions (SDF), such as the one used in NeuS cannot be applied in this context. We thus propose an efficient self-regularization method that ensures the shortest axis of each visible 3D Gaussian forms an obtuse angle with the camera's principal axis. Furthermore, we propose an approach for indirect illumination reconstruction that is suited for 3D Gaussian representation. Extensive experimental analyses have demonstrated that our proposed approach significantly outperforms existing methods on various datasets across multiple tasks.
           </p>
-          <img src="./static/images/pipeline.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
+          <img src="./static/images/pipeline.png" 
+               class="interpolation-image" 
+               alt="Interpolate start reference image" 
+               style="width: 60%; height: auto; display: block; margin: 0 auto;">
         </div>
         <!-- <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
@@ -450,6 +457,7 @@
   title     = {GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization},
   journal   = {Arxiv},
   year      = {2023},
+  eprint    = {2312.05133},
 }</code></pre>
   </div>
 </section>
